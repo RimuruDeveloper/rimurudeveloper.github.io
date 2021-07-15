@@ -25,17 +25,15 @@
 *, ::after, ::before {
     box-sizing: border-box;
 }
-user agent stylesheet
+
+
 div {
     display: block;
 }
 .text-light {
     color: #f8f9fa!important;
 }
-body {
-    font-family: "Nunito", sans-serif;
-    font-size: calc(1rem + 1vw);
-}
+
 body {
     margin: 0;
     font-family: var(--bs-font-sans-serif);
