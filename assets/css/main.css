@@ -5,3 +5,15 @@
     overflow: hidden;
     border: 12px solid #005cb1;
 }
+.wrapper::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 24px);
+    height: calc(100vh - 24px);
+    margin: 6px;
+    background: url(../images/bg-pt.png);
+    z-index: -1;
+    background-size: 50px;
+}
