@@ -1,5 +1,8 @@
 
 
+.av-bg-dark {
+    background: #161c2d;
+}
 
 
 
@@ -22,9 +25,7 @@
     margin-right: auto;
     margin-left: auto;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
-}
+
 
 
 div {
