@@ -1,190 +1,33 @@
 body {
-    font-family: "Noto Sans JP","ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"游ゴシック",YuGothic,sans-serif;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    color: #005cb1;
+    font-family: "Nunito", sans-serif;
+    font-size: calc(1rem + 1vw);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+.av-bg-dark {
+    background: #161c2d;
 }
 
-html {
-    font-size: 16px;
+.text-light {
+    color: #f8f9fa!important;
 }
 
-.wrapper {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    border: 12px solid #005cb1;
+.px-0 {
+    padding-right: 0!important;
+    padding-left: 0!important;
 }
 
-.wrapper::before {
-    content: "";
+.fixed-top {
     position: fixed;
     top: 0;
+    right: 0;
     left: 0;
-    width: calc(100% - 24px);
-    height: calc(100vh - 24px);
-    margin: 6px;
-    background: url(../images/bg-pt.png);
-    z-index: -1;
-    background-size: 50px;
+    z-index: 1030;
 }
 
-.main-header {
-    position: relative;
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     width: 100%;
-}
-
-.main-header-inner-logo {
-    margin-right: 20px;
-}
-
-.main-header-inner-nav {
-    max-width: 750px;
-}
-
-.main-header-inner-nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.main-header-inner-nav-list-item {
-    margin: 0 25px;
-    padding-bottom: 10px;
-}
-
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-.main-header-inner-nav-list-item .text-inner {
-    text-decoration: none;
-    position: relative;
-    display: block;
-    letter-spacing: -.4em;
-}
-
-.main-header-inner-nav-list-item .text-inner .font-effect {
-    position: relative;
-    display: inline-block;
-}
-
-.main-header-inner-nav-list-item .text-inner::before {
-    content: '';
-    position: absolute;
-    top: calc(100% + 1px);
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 10px 8.7px;
-    border-color: transparent transparent #005cb1;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.main-header-inner-nav-list-item .text-inner .font-effect .normal {
-    font-size: 1.5rem;
-    color: #005cb1;
-    font-family: Montserrat,sans-serif;
-    font-weight: 600;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: .1s all;
-    transition: .1s all;
-    letter-spacing: normal;
-}
-
-.main-header-inner-nav-list-item .text-inner .font-effect .ten {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 1.53125rem;
-    color: #005cb1;
-    font-family: tensura;
-    font-weight: 600;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: 50ms all;
-    transition: 50ms all;
-    letter-spacing: normal;
-}
-
-.main-header .sub-nav {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 20px;
-    background: #005cb1;
-    opacity: 0;
-    display: none;
-    z-index: 10;
-    padding: 40px 0;
-}
-
-.main-header .sub-nav-inner {
-    width: 90%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.main-header .sub-nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    max-width: 1080px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.main-header .sub-nav-list-item {
-    margin-right: 1%;
-    margin-bottom: 1%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
 }
