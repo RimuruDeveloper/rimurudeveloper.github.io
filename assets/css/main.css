@@ -43,4 +43,22 @@ html {
 }
 
 .main-header-inner-logo {
+    margin-right: 20px;
+}
+
+.main-header-inner-nav {
+    max-width: 750px;
+}
+
+.main-header-inner-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.main-header-inner-nav-list-item {
+    margin: 0 25px;
+    padding-bottom: 10px;
 }
