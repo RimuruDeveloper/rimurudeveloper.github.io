@@ -63,18 +63,6 @@ html {
     padding-bottom: 10px;
 }
 
-::marker {
-    unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: none;
-    text-indent: 0px !important;
-    text-align: start !important;
-    text-align-last: start !important;
-}
-
-ol, ul {
-    list-style-type: none;
-}
 
 ul {
     display: block;
@@ -96,3 +84,30 @@ h1 {
     font-weight: bold;
 }
 
+.main-header-inner-nav-list-item .text-inner {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    letter-spacing: -.4em;
+}
+
+.main-header-inner-nav-list-item .text-inner .font-effect {
+    position: relative;
+    display: inline-block;
+}
+
+.main-header-inner-nav-list-item .text-inner::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 8.7px;
+    border-color: transparent transparent #005cb1;
+    visibility: hidden;
+    opacity: 0;
+}
