@@ -111,3 +111,40 @@ h1 {
     visibility: hidden;
     opacity: 0;
 }
+
+.main-header-inner-nav-list-item .text-inner .font-effect .normal {
+    font-size: 1.5rem;
+    color: #005cb1;
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: .1s all;
+    transition: .1s all;
+    letter-spacing: normal;
+}
+
+.main-header-inner-nav-list-item .text-inner .font-effect .ten {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.53125rem;
+    color: #005cb1;
+    font-family: tensura;
+    font-weight: 600;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 50ms all;
+    transition: 50ms all;
+    letter-spacing: normal;
+}
