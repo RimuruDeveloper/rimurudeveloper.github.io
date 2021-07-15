@@ -1,3 +1,14 @@
+body {
+    font-family: "Noto Sans JP","ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"游ゴシック",YuGothic,sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    color: #005cb1;
+}
+
+html {
+    font-size: 16px;
+}
+
 .wrapper {
     width: 100%;
     position: relative;
@@ -16,4 +27,9 @@
     background: url(../images/bg-pt.png);
     z-index: -1;
     background-size: 50px;
+}
+
+.main-header {
+    position: relative;
+    width: 100%;
 }
